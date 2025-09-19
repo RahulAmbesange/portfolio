@@ -1,6 +1,5 @@
 import React from 'react';
 import './Service.css';
-import { FaWebAwesome } from "react-icons/fa6";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { CiMobile4 } from "react-icons/ci";
 import { VscGraph } from "react-icons/vsc";

@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-// import rlogo from '../Assets/rlogo.png';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { FaMoon } from "react-icons/fa";
 
 function Header() {
 
-  const [theme, setTheme] = useState(false);
+
 
   return (
     <header className="header">
