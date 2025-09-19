@@ -1,0 +1,94 @@
+.center{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin: 20px auto;
+   width: 700px;
+   text-align: center;
+
+}
+.cards{
+   display: flex;
+   justify-content: center;
+   padding: 50px 40px;
+}
+.card{
+   background-image: url(../Assets/background3.avif);
+   background-repeat: no-repeat;
+   border: 1px solid lightgray;
+  width: 500px;
+   padding: 35px ;
+   text-align: center;
+   margin: 12px;
+}
+.card div {
+   font-size: 3rem;  /* Adjust this value for your desired icon size */
+   /* color: #EC5E04;  Optional: Add color to your icons */
+ }
+ .card:hover{
+   border:2px solid rgb(9, 9, 9);
+   background-color: #EC5E04;
+   transform: translateY(-5px);
+   
+ }
+ .card:hover div,
+ .card:hover h3{
+color: #EC5E04;
+ }
+
+ .skills-header{
+   text-align: center;
+   margin-bottom: 20px;
+}
+.skills-container{
+   width: 80%;
+   margin: 0 auto;
+}
+.skill{
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.skill h6{
+   margin: 0;
+   width: 100px;
+}
+.skill-line{
+   flex-grow: 1;
+   height: 10px;
+   background-color: #e0e0e0;
+   margin-left: 20px;
+   border-radius: 5px;
+   position: relative;
+
+}
+.skill-progress{
+   height: 100%;
+   background-color: #EC5E04;
+   border-radius: 5px;
+}
+.react-progress{
+   width: 80%;
+}
+.react-progress1{
+   width: 85%;
+}
+.react-progress2{
+   width: 80%;
+}
+.react-progress3{
+   width: 77%;
+}
+.react-progress4{
+   width: 73%;
+}
+.react-progress5{
+   width: 98%;
+}
+.react-progress6{
+   width: 98%;
+}
+.react-progress7{
+   width: 99%;
+}
+

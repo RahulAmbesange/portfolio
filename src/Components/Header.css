@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+   --primary-color: #EC5E04;
+   --link-color: #333;
+   --link-hover-color: #EC5E04;
+   --background-color: #ffffff;
+ }
+ 
+ .header {
+   position: sticky;
+   top: 0;
+   width: 100%;
+   background-color: var(--background-color);
+   z-index: 1000;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+   background-image: url(../Assets/background3.avif);
+   background-position-x: right  ;
+   background-size: cover;
+ }
+ .logo h1{
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: #EC5E04;
+  font-weight: 900;
+ display: flex;
+  align-items: center;
+ }
+ .header-content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 30px;
+   max-width: 1200px;
+   margin: 0 auto;
+   box-sizing: border-box;
+ }
+ .logo{
+  display: flex;
+  align-items: center;
+ }
+ 
+
+ 
+ .navigation {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .links {
+   margin: 0 15px; /* Even spacing between links */
+ }
+ 
+ .links a {
+   text-decoration: none;
+   color: var(--link-color);
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   font-size: 16px;
+   transition: color 0.3s ease, transform 0.3s ease;
+   position: relative;
+ }
+ 
+ .links a:hover {
+   color: var(--link-hover-color);
+   transform: scale(1.05);
+ }
+ 
+ .links a::after {
+   content: '';
+   display: block;
+   width: 0;
+   height: 2px;
+   background: var(--link-hover-color);
+   transition: width 0.3s;
+   position: absolute;
+   left: 0;
+   bottom: -5px;
+ }
+ 
+ .links a:hover::after {
+   width: 100%;
+ }
+ .theme{
+  cursor: pointer;
+ }
+ 
+ @media (max-width: 768px) {
+   .header-content {
+     flex-direction: column;
+     padding: 20px;
+   }
+ 
+   .navigation {
+     flex-direction: column;
+     align-items: flex-start;
+     margin-top: 10px;
+   }
+ 
+   .links {
+     margin: 5px 0;
+   }
+ }
+ 
